@@ -28,13 +28,13 @@ module.exports = class AnnounceCommand extends Command {
   }
 
   async run(message, args) {
-    const annChan = this.client.channels.get('568827906604662794');
+    const annChan = this.client.channels.get('571444763773894659');
     const embed = new RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
       .setDescription(args.toAnn)
       .setColor('0xFF0000')
       .setTimestamp();
-    annChan.send('571445526260613121', { embed }).then(() => {
+    annChan.send('<&571445526260613121>', { embed }).then(() => {
       message.reply('Announcement sent!');
     });
   }
