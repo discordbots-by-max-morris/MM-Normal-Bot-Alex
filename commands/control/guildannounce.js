@@ -23,7 +23,7 @@ module.exports = class AnnounceCommand extends Command {
         infinite: false
       }],
       guarded: true,
-      ownerOnly: flase
+      ownerOnly: false
     });
   }
 
