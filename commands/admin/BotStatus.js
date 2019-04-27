@@ -32,7 +32,7 @@ module.exports = class BotStatsCommand extends Command {
             .addField('Node and Library',` Node: ${process.version} \nDiscord.js 11.4.2\nDiscord.js-commando 0.10.0` ,true)
             .addField(`Platform`,`${os.platform}`, true)
             .addField('Servers, Users',`On ${this.client.guilds.size} servers, with a total of ${this.client.users.size} users.`)
-            .addField("My Discord Invite Link", "[Discord Invite Link](https://discordapp.com/api/oauth2/authorize?client_id=564270724060282891&permissions=8&scope=bot)", true)
+            .addField("My Discord Invite Link", "[Discord Invite Link](https://discordapp.com/oauth2/authorize?client_id=564270724060282891&scope=bot&permissions=2146958847)", true)
             .addField("Max's Bot Support Server", "[Support Server Invite](https://discord.gg/X7kU6V7)", true)
                 code: 'AsciiDoc'
         message.channel.send(StatusEmbed);
