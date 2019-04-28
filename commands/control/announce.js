@@ -28,7 +28,7 @@ module.exports = class AnnounceCommand extends Command {
   }
 
   async run(message, args) {
-    const annChan = this.client.channels.get('571444763773894659');
+    const annChan = this.client.channels.get('571830512042115073');
     const embed = new RichEmbed()
       .setAuthor(message.author.username, message.author.avatarURL)
       .setDescription(args.toAnn)
